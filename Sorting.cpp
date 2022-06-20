@@ -57,6 +57,45 @@ void Sorting::InsertionSort()
 	EndAnim();
 }
 
+void Sorting::CocktailSort()
+{
+	bool swapped = true;
+	int start = 0;
+	int end = m_visualizer->getColNum() - 1;
+
+	while (swapped) {
+		swapped = false;
+
+		for (int i = start; i < end; ++i) {
+			m_visualizer->getColourHandle()[i].changeColour(sf::Color::Green);
+			m_visualizer->getColourHandle()[i + 1].changeColour(sf::Color::Red);
+			if (m_visualizer->getArray()[i] > m_visualizer->getArray()[i + 1]) {
+				swap(m_visualizer->getArray()[i], m_visualizer->getArray()[i + 1]);
+				swapped = true;
+			}
+		}
+
+		if (!swapped)
+			break;
+
+		swapped = false;
+
+		--end;
+
+		for (int i = end - 1; i >= start; --i) {
+			m_visualizer->getColourHandle()[i].changeColour(sf::Color::Green);
+			m_visualizer->getColourHandle()[i + 1].changeColour(sf::Color::Red);
+			if (m_visualizer->getArray()[i] > m_visualizer->getArray()[i + 1]) {
+				swap(m_visualizer->getArray()[i], m_visualizer->getArray()[i + 1]);
+				swapped = true;
+			}
+		}
+
+		++start;
+	}
+	EndAnim();
+}
+
 void Sorting::EndAnim()
 {
 	for(int i = 0; i < m_visualizer->getColNum(); i++) {

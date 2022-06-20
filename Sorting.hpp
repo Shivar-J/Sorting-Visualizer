@@ -12,6 +12,7 @@ public:
 	void BubbleSort();
 	void SelectionSort();
 	void InsertionSort();
+	void CocktailSort();
 
 	void EndAnim();
 private:
