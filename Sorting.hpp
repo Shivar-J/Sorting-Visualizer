@@ -1,5 +1,7 @@
 #pragma once
 #include "Visualizer.hpp"
+#include <chrono>
+#include <thread>
 
 class Sorting
 {
@@ -11,6 +13,7 @@ public:
 	void SelectionSort();
 	void InsertionSort();
 
+	void EndAnim();
 private:
 	void swap(int& a, int& b);
 	void BubbleSwap(int& a, int& b);
