@@ -1,0 +1,103 @@
+﻿  game.cpp
+  main.cpp
+  Sorting.cpp
+  Visualizer.cpp
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(59,42): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(59,30): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(60,65): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(60,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(61,56): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(61,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(62,33): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(62,30): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(105,42): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(105,30): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(106,65): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(106,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(107,56): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(107,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(108,33): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\sbshi\source\repos\SortingVisualizer\SortingVisualizer\Visualizer.cpp(108,30): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Window.cpp
+  Generating Code...
+  SortingVisualizer.vcxproj -> C:\Users\sbshi\source\repos\SortingVisualizer\x64\Debug\SortingVisualizer.exe
