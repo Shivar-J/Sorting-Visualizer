@@ -18,6 +18,7 @@ void Sorting::BubbleSort()
 			}
 		}
 	}
+	EndAnim();
 }
 
 void Sorting::SelectionSort()
@@ -35,6 +36,7 @@ void Sorting::SelectionSort()
 			swap(m_visualizer->getArray()[min], m_visualizer->getArray()[i]);
 		}
 	}
+	EndAnim();
 }
 
 void Sorting::InsertionSort()
@@ -51,6 +53,15 @@ void Sorting::InsertionSort()
 		}
 		m_visualizer->getArray()[j + 1] = key;
 		UpdateScreen();
+	}
+	EndAnim();
+}
+
+void Sorting::EndAnim()
+{
+	for(int i = 0; i < m_visualizer->getColNum(); i++) {
+		int t = m_visualizer->getArray()[i];
+		m_visualizer->getColourHandle()[i].changeColour(sf::Color::Green);
 	}
 }
 
