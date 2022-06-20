@@ -13,6 +13,7 @@ public:
 	void SelectionSort();
 	void InsertionSort();
 	void CocktailSort();
+	void CycleSort();
 
 	void EndAnim();
 private:

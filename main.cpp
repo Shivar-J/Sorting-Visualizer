@@ -2,7 +2,7 @@
 
 char input() {
 	int sort;
-	printf("SPACE = start\n\nChoose Sorting Algorithm\n1: Bubble Sort\n2: Selection Sort\n3: Insertion Sort\n4: Cocktail Sort\n");
+	printf("SPACE = start\n\nChoose Sorting Algorithm\n1: Bubble Sort\n2: Selection Sort\n3: Insertion Sort\n4: Cocktail Sort\n5: Cycle Sort\n");
 	scanf_s("%d", &sort);
 
 	return sort;
@@ -24,6 +24,7 @@ int main() {
 				break;
 			case 4: game.getSorting()->CocktailSort();
 				break;
+			case 5: game.getSorting()->CycleSort();
 			}
 		}
 		game.Update();

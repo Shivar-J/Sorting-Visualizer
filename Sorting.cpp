@@ -96,6 +96,53 @@ void Sorting::CocktailSort()
 	EndAnim();
 }
 
+void Sorting::CycleSort()
+{
+	int writes = 0;
+
+	for (int cycle_start = 0; cycle_start <= m_visualizer->getColNum() - 2; cycle_start++) {
+		int item = m_visualizer->getArray()[cycle_start];
+
+		int pos = cycle_start;
+
+		for (int i = cycle_start + 1; i < m_visualizer->getColNum(); i++) {
+			m_visualizer->getColourHandle()[i].changeColour(sf::Color::Yellow);
+			if (m_visualizer->getArray()[i] < item)
+				pos++;
+		}
+
+		if (pos == cycle_start)
+			continue;
+
+		while (item == m_visualizer->getArray()[pos])
+			m_visualizer->getColourHandle()[pos].changeColour(sf::Color::Blue);
+			pos += 1;
+
+		if (pos != cycle_start) {
+			swap(item, m_visualizer->getArray()[pos]);
+			writes++;
+		}
+
+		while (pos != cycle_start) {
+			pos = cycle_start;
+			for (int i = cycle_start + 1; i < m_visualizer->getColNum(); i++) {
+				if (m_visualizer->getArray()[i] < item)
+					pos += 1;
+			}
+
+			while (item == m_visualizer->getArray()[pos])
+				pos += 1;
+
+			if (item != m_visualizer->getArray()[pos]) {
+				m_visualizer->getColourHandle()[pos].changeColour(sf::Color::Red);
+				swap(item, m_visualizer->getArray()[pos]);
+				writes++;
+			}
+		}
+	}
+	EndAnim();
+}
+
 void Sorting::EndAnim()
 {
 	for(int i = 0; i < m_visualizer->getColNum(); i++) {
